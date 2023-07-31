@@ -1,0 +1,206 @@
+body {
+    font-family: "raleway";
+    margin: 0;
+}
+
+
+/* Styling Header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px #D3D3D3FF;
+    box-shadow: 5px 5px 5px 5px #D3D3D3FF;
+}
+
+.svgSize {
+    width: 20px;
+    padding-right: 8px;
+}
+
+
+input {
+    height: 32px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#searchField {
+    background-image: url("./svg/magnifying-glass-solid.svg");
+    background-position: 2%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 16px;
+    padding-left: 40px;
+    font-size: 16px;
+    border: solid 1px #D3D3D3FF;
+}
+
+::placeholder {
+    color: #000000;
+    opacity: 1; /* Firefox */
+}
+
+/* Styling owners */
+
+
+.ownersSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.ownersBox {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    border: solid 1px #D3D3D3FF;
+    border-radius: 10px;
+}
+
+.owners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 8px;
+    text-align: center;
+}
+
+.postOwners {
+    height: 56px;
+    width: 56px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid #FF0000FF;
+}
+
+/* Styling postBoxes */
+
+.postBox {
+    border: solid 1px #D3D3D3FF;
+    border-radius: 10px;
+    width: 400px;
+    /*display: flex;*/
+    margin-bottom: 16px;
+}
+
+.boxHeader {
+    display: flex;
+}
+
+.boxPostOwners {
+    padding: 16px 0 16px 8px;
+}
+
+#content {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authorAndLocation {
+    flex-direction: column;
+    display: flex;
+    padding: 16px 0 0 8px;
+}
+
+.author {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+img {
+    border-radius: 3px;
+    width: 400px;
+}
+
+.postIcons {
+    display: flex;
+    padding: 16px 0 0 8px;
+    justify-content: space-between;
+}
+
+.bookmarkIcon {
+    height: 20px;
+}
+
+b {
+    padding: 8px;
+}
+
+span {
+
+}
+
+.comments {
+    padding-top: 16px;
+}
+
+.commentField {
+    padding-top: 8px;
+    padding-bottom: 16px;
+    justify-content: space-between;
+    display: flex;
+}
+
+input {
+    border: none;
+    padding-left: 8px;
+}
+
+button {
+    cursor: pointer;
+    padding-right: 8px;
+    border: none;
+    background-color: #ffffff;
+    /*display: none;*/
+}
+
+/* Styling media queries */
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #searchField {
+        text-align: center;
+        background-position: 40%;
+    }
+}
+
+@media (max-width: 450px) {
+    .ownersBox {
+        width: 300px;
+    }
+
+    .postOwners {
+        width: 32px;
+        height: 32px;
+    }
+
+    .owners {
+        font-size: 10px;
+    }
+
+    .postBox {
+        width: 300px;
+    }
+
+
+    element.style {
+    }
+    img {
+        width: 300px;
+    }
+
+    #searchField {
+        padding-left: 0;
+    }
+}
